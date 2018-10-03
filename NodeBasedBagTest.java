@@ -19,7 +19,7 @@ public class NodeBasedBagTest {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        NodeBasedBag<String> bag = new NodeBasedBag<>();
+        NodeBasedBag<Coin> bag = new NodeBasedBag<>();
         int choice = -1;
 
         do {
@@ -37,8 +37,8 @@ public class NodeBasedBagTest {
             switch (choice) {
                 case 1:
                     System.out.println("Enter item:");
-                    String item = in.next();
-                    if (bag.add(item)) {
+                    int item = in.nextInt();
+                    if ((item == 10 || item == 25 || item == 75 || item == 100) && bag.add(new Coin(item))) {
                         System.out.println("Item " + item + " is added successfully to the bag");
                     }
                     break;
