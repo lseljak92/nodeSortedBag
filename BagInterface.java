@@ -1,4 +1,4 @@
-/*
+/**
  * Homework 02
  * BagInterface.java
  * Devon Dy-Liacco, Christian Cortez, Maria Seljak
