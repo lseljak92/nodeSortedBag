@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Homework 02
+ * BagInterface.java
+ * Devon Dy-Liacco, Christian Cortez, Maria Seljak
  */
 package nodebasedarray;
 
-/**
- *
- * @author abeer
- */
 public class NodeBasedBag<T> implements BagInterface<T> {
 
     Node firstNode;
