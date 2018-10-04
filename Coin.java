@@ -32,6 +32,14 @@ public class Coin implements Comparable<Coin> {
         return coinValue==c.getValue();
     }
 
+	public boolean equals(Object c) {
+		try {
+			return equals((Coin)c);
+		} catch (ClassCastException e) {
+			return super.equals(c);
+		}
+	}
+
     public int compareTo(Coin c) {
         return coinValue-c.getValue();
     }
