@@ -48,9 +48,9 @@ public class NodeBasedBagTest {
                     break;
                 case 3:
                     System.out.println("Enter the item you want to remove from the bag:");
-                    item = in.next();
-                    if (bag.contains(item)) {
-                        bag.remove(item);
+                    item = in.nextInt();
+                    if (bag.contains(new Coin(item))) {
+                        bag.remove(new Coin(item));
                         System.out.println("Item " + item + " is removed from the bag");
                     } else {
                         System.out.println("The item " + item + " doesnt exist in the bag");
@@ -62,13 +62,13 @@ public class NodeBasedBagTest {
                     break;
                 case 5:
                     System.out.println("Enter the item you are looking for:");
-                    item = in.next();
-                    System.out.println("The item " + item + " is found " + bag.getFrequencyOf(item) + " times");
+                    item = in.nextInt();
+                    System.out.println("The item " + item + " is found " + bag.getFrequencyOf(new Coin(item)) + " times");
                     break;
                 case 6:
                     System.out.println("Enter the item you are looking for:");
-                    item = in.next();
-                    if (bag.contains(item)) {
+                    item = in.nextInt();
+                    if (bag.contains(new Coin(item))) {
                         System.out.println("The item " + item + " is in the bag");
                     } else {
                         System.out.println("The item " + item + " is NOT in the bag");
